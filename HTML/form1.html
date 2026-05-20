@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+<body style="background-color: #eaf4ff;">
+    <!-- HEADER -->
+     <header style="text-align: center;">
+        <h1>Job Application</h1>
+     </header>
+      <marquee>
+   Summer Internship Applications Are Open
+</marquee>
+     <!-- FORM -->
+      <main>
+        <form>
+            <!-- PERSONAL INFORMATION -->
+             <fieldset>
+                <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+        <br/>
+        <br/>
+        <label for="email id">Email Id:</label>
+        <input type="text" id="email id" name="email id" placeholder="abc123@gmail.com" required>
+        <br/>
+        <br/>
+        <label for="phonenumber">Phone No:</label>
+        <input type="tel" id="phonenumber" name="phonenumber" placeholder="123-4567-321" required>
+        <br/>
+        <br/>
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="DOB">
+
+        <button>Submit</button>
+        </fieldset>
+        <br>
+<!-- GENDER INFORMATION -->
+             <fieldset>
+                <legend>Gender Information</legend>
+                
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+             </fieldset>
+             <br>
+             <!-- SKILLS -->
+             <fieldset>
+                <legend>Skills</legend>
+            <input type="checkbox" name="checkbox" id="checkbox1">
+            <label for="checkbox1">MERN</label>
+            
+            <br>
+             <input type="checkbox" name="checkbox" id="checkbox2">
+            <label for="checkbox2">AI_Developer</label>
+           
+            <br>
+            <input type="checkbox" name="checkbox" id="checkbox3">
+            <label for="checkbox3">Data Analyst</label>
+            
+            <br>
+            <input type="checkbox" name="checkbox" id="checkbox4">
+            <label for="checkbox4">Cloud Enginner</label>
+            
+             </fieldset>
+
+             <br>
+             <!-- ADDITIONAL INFORMATION -->
+             <fieldset>
+                <legend>Additional Information</legend>
+                <!-- Experience -->
+                 <label for="experience">Years of Experience:</label>
+
+                 <select id="experience">
+                    <option disabled selected>Select Year</option>
+                    <option>Fresher</option>
+                    <option>1 Year</option>
+                    <option>2 Year</option>
+                    <option>3+ Year</option>
+
+                    
+                 </select>
+                 <br>
+                 <br>
+                 <!-- LOCATION -->
+                  <label for="location">Preferred Location:</label>
+                <select name="" id="">
+                    <option value="vd">Vadodara</option>
+                    <option value="in">Indore</option>
+                    <option value="nd">Noida</option>
+                    <option value="hd">Hyderabad</option>
+                </select>
+                <br><br>
+                <label for="resume">Upload Resume:</label>
+                <input type="file" name="file" id="resume" maxlength="10MB" accept=".pdf,.html">
+                <br><br>
+                <label for="textarea1">Additional Comments:</label>
+                <br/>
+            <textarea name="textarea1" id="textarea1" cols="30" rows="10"></textarea>
+                <br/>
+             </fieldset>
+             <br>
+             <!-- SUBMIT BUTTON -->
+              <button type="submit">Submit</button>
+              
+              <button type="reset">Reset</button>
+        </form>
+      </main>
+</body>
+</html>
