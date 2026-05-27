@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body{
+            position: absolute;
+            left: 45%;
+        }
+
+        .main{
+            width: 150px;
+            height: 300px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 20px;
+
+        }
+        .C1{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: red;
+            opacity: 50%;
+            
+        }
+        .C1:hover{
+            opacity: 100%;
+        }
+        .C2{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: yellow;
+            opacity: 50%;
+           
+        }
+          .C2:hover{
+            opacity: 100%;
+        }
+        .C3{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: green;
+            opacity: 50%;
+        }
+          .C3:hover{
+            opacity: 100%;
+        }
+        .line{
+            width: 20px;
+            height: 300px;
+            background-color: black;
+            position: absolute;
+            left: 44%
+
+        }
+        
+       
+    </style>
+</head>
+<body>
+     <div class="main">
+        <div class="C1"></div>
+        <div class="C2"></div>
+        <div class="C3"></div>
+     </div>
+     <div class="line"></div>
+     <div class="stand"></div>
+     
+
+    
+</body>
+</html>

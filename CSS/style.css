@@ -1,0 +1,28 @@
+/* h1{
+  color: deeppink;  
+} */
+/* p{ */
+    /* font-weight: 800;
+    font-size: xx-large;
+    text-decoration: underline red solid;
+    background-color: burlywood;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding: 20px; */
+    /* text-transform: capitalize;
+    font-family: sans-serif;
+    font-style: oblique; */
+   
+/* } */
+a{
+    text-decoration: none;
+
+}
+
+#name{
+    color: red;
+}
+.main{
+    color: yellowgreen;
+}

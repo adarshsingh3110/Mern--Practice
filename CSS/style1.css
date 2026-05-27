@@ -1,0 +1,45 @@
+/* @font-face {
+    font-family: hihi;
+    src :url();
+} */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+/* h1{
+    color: darkmagenta;
+    background-color: rgb(232, 232, 118);
+    
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-style: oblique;
+    text-align: center;
+    text-transform: capitalize;
+} */
+
+div{
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(to right bottom,red, blue); */
+    /* royal gradient // conic gradient */
+    background-image: url("https://plus.unsplash.com/premium_photo-1755883589419-75ccf2f0a5c4?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    
+}
+h1{
+    font-size: 50px;
+    color: blueviolet;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 100%;
+}
+
+ 
