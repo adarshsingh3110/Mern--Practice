@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: black;
+    --card-color: white;
+    --primary-color: #ff6b35;
+    /* --text-color: #333; */
+}
+
+body{
+    background-color: var(--bg-color);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    width: 500px;
+    background-color: var(--card-color);
+    padding: 30px;
+    border-radius: 12px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.heading h1{
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.itm1{
+     background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+.itm2{
+     background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    color: yellow;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+.itm3{
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    color: green;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.itm1 h2{
+     color: purple;
+    margin-bottom: 5px;
+}
+.itm2 h2{
+     color: yellow;
+    margin-bottom: 5px;
+
+}
+.itm3 h2{
+    color: green;
+    margin-bottom: 5px;
+}
+
+.itm1 p,
+.itm2 p,
+.itm3 p{
+    color: #666;
+}
