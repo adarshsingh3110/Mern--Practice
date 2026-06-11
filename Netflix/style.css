@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+}
+.hero{
+    height: 100vh;
+     background-image:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url("https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 150px;
+}
+
+nav img{
+    width: 150px;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav-right select{
+    background: rgba(0,0,0,0.5);
+    color: white;
+
+    border: 1px solid gray;
+    border-radius: 4px;
+
+    padding: 8px 15px;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+nav button{
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: calc(100vh - 100px);
+    gap: 20px;
+    /* font-size: 20px; */
+}
+.content h1{
+    font-size: 56px;
+    font-weight: 900;
+    max-width: 650px;
+}
+
+.content h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.content p{
+    font-size: 19px;
+}
+.email-box{
+    display: flex;
+    gap: 10px;
+}
+.email-box input{
+    width: 380px;
+    padding: 15px;
+
+    background: rgba(0,0,0,0.5);
+    border: 1px solid gray;
+
+    color: white;
+    border-radius: 4px;
+}
+.email-box button{
+    background: #e50914;
+    color: white;
+
+    border: none;
+
+    padding: 15px 25px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    border-radius: 4px;
+    cursor: pointer;
+}
+.curve{
+    height: 100px;
+    width: 100%;
+
+    border-top: 4px solid #e50914;
+
+    border-radius: 50% 50% 0 0;
+
+    background: radial-gradient(
+        ellipse at top,
+        #0f1b4c 0%,
+        #000 70%
+    );
+
+    margin-top: -50px;
+}
+.trending{
+    background-color: #000;
+    color: white;
+    padding: 20px 100px 60px;
+}
+
+.trending h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.movie-row{
+    display: flex;
+    align-items: flex-end;
+    gap: 22px;
+
+    padding-left: 60px;
+
+    overflow: hidden; /* scrollbar hat jayega */
+
+    position: relative;
+}
+
+.movie{
+    position: relative;
+    flex-shrink: 0;
+    overflow: visible;
+
+    transition: transform 0.3s ease;
+}
+
+.movie:hover{
+    transform: scale(1.08);
+}
+
+.movie img{
+    width: 160px;
+    height: 224px;
+
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.movie span{
+    position: absolute;
+
+    left: -10px;
+    bottom: -12px;
+
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 1;
+
+    color: rgb(0,0,0);
+
+    -webkit-text-stroke: 2px rgb(255,255,255);
+
+    z-index: 10;
+}
+.slider-arrow{
+    width: 24px;
+    height: 120px;
+
+    background: rgba(255,255,255,0.15);
+
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 34px;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+
+    transition: background 0.3s;
+}
+
+.slider-arrow:hover{
+    background: rgba(255, 255, 255, 0.795);
+}
+.reasons{
+    padding: 5px 5px 90px;
+    color: white;
+    padding-top: 30px;
+}
+
+.reasons h2{
+    font-size: 29px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.reason-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px;
+}
+.reason-card{
+    position: relative;
+
+    height: 210px;
+
+    padding: 40px;
+
+    border-radius: 22px;
+
+    background: linear-gradient(
+        135deg,
+        #1a2148 0%,
+        #24102d 100%
+    );
+
+    overflow: hidden;
+}
+.reason-card h3{
+    font-size: 25px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+.reason-card p{
+    font-size: 20px;
+    line-height: 1.5;
+
+    color: rgba(255,255,255,0.75);
+
+    max-width: 500px;
+}
+.icon{
+    position: absolute;
+
+    right: 30px;
+    bottom: 25px;
+
+    font-size: 48px;
+}
+.faq{
+    /* margin-top: 5px; */
+    padding: 0px 100px 60px;
+    color: white;
+}
+
+.faq h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.faq-item{
+    margin-bottom: 8px;
+}
+
+.faq-question{
+    background: #2d2d2d;
+
+    padding: 28px;
+
+    font-size: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.faq-question:hover{
+    background: #414141;
+}
+
+.faq-question span{
+    font-size: 40px;
+    font-weight: 300;
+}
+.footer{
+    padding: 70px 100px;
+    color: rgba(255,255,255,0.7);
+}
+
+.contact{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.contact a{
+    color: rgba(255,255,255,0.7);
+}
+
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 40px;
+
+    margin-bottom: 40px;
+}
+.footer-links div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-links a{
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+}
+.footer-language{
+    margin-bottom: 30px;
+}
+
+.footer-language select{
+    background: transparent;
+    color: white;
+
+    border: 1px solid gray;
+    border-radius: 4px;
+
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.country{
+    margin-top: 30px;
+    font-size: 18px;
+}
+.ready-watch{
+    padding: 20px 100px;
+    text-align: center;
+    color: white;
+}
+
+.ready-watch p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.ready-email{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.ready-email input{
+    width: 600px;
+    height: 58px;
+
+    padding: 0 20px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    color: white;
+
+    border-radius: 4px;
+
+    font-size: 16px;
+}
+.ready-email button{
+    background: #e50914;
+
+    color: white;
+
+    border: none;
+
+    padding: 0 30px;
+
+    border-radius: 4px;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
