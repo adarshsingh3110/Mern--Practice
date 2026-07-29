@@ -95,3 +95,57 @@
 //     [id] :101
 // }
 // console.log(typeof id)
+
+//protoype
+
+// function Student(name){
+//     this.name = name
+//     // this.sayHello = function(){
+//     //     console.log("hello " +this.name)
+//     // }
+// }
+// // Student.prototype.text = "This is a proto"
+// Student.prototype.sayHello = function(){
+//     console.log("Hello " + this.name)
+// }
+// const s1 = new Student("Adarsh")
+// const s2 = new Student("Harsh")
+// console.log(s1.sayHello())
+// console.log(s2.sayHello())
+
+//classes
+// class BankAccount{
+//     customerName;
+//     accountNumber;
+//     balance;
+
+//     constructor(customerName, balance=0){
+//         this.customerName = customerName
+//         this.accountNumber = Date.now()
+//         this.balance = balance
+//     }
+
+//     deposit(amount){
+//         this.balance += amount
+//     }
+//     withdraw(amount){
+//         this.balance -= amount
+//     }
+// }
+
+// const emaa = new BankAccount("Emma",1000)
+// emaa.deposit(200)
+// emaa.withdraw(100)
+// console.log(emaa)
+
+class Person {
+constructor(name, age) {
+this.name = name;
+this.age = age;
+}
+greet(){
+console.log("Hi, main " + this.name + " mai " +this.age + " saal ka hu");
+}
+}
+const p = new Person("Adarsh", 21);
+p.greet();

@@ -43,20 +43,20 @@
 // console.log(user.skills[0]);
 // console.log(typeof user);
 
-function counter() {
-let count = 0;            
-return function () {      
-count++;
-return count;
-};
-}
-// (1) local variable
-// (2) inner function is returned
-const inc = counter();      
+// function counter() {
+// let count = 0;            
+// return function () {      
+// count++;
+// return count;
+// };
+// }
+// // (1) local variable
+// // (2) inner function is returned
+// const inc = counter();      
 
-console.log(inc()); // 1    // (4)
-console.log(inc()); // 2    // (5)
-console.log(inc()); // 3    // (6)
+// console.log(inc()); // 1    // (4)
+// console.log(inc()); // 2    // (5)
+// console.log(inc()); // 3    // (6)
 
 //function borrow
 // const u1 = {
@@ -79,3 +79,4 @@ console.log(inc()); // 3    // (6)
 // // bind()
 // let newWelcome = u1.welcome.bind(u2)
 // newWelcome('chapra',21)
+

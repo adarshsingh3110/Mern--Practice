@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bank Management System</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Day13</h1>
-    <script src="./script.js"></script>
+
+    <div class="container">
+
+        <h1>🏦 Apna Bank</h1>
+
+        <!-- Create Account Form -->
+        <div class="create-account">
+
+            <h2>Create New Account</h2>
+
+            <form id="accountForm">
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Enter Customer Name"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="balance"
+                    placeholder="Enter Initial Balance"
+                    required
+                >
+
+                <button type="submit">
+                    Create Account
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Bank Summary -->
+        <div class="summary">
+
+            <div class="summary-card">
+                <h3>Total Accounts</h3>
+                <p id="totalAccounts">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Total Bank Balance</h3>
+                <p>₹ <span id="totalBalance">0</span></p>
+            </div>
+
+        </div>
+
+        <!-- Accounts -->
+        <div class="accounts-section">
+
+            <h2>Customer Accounts</h2>
+
+            <div id="accountsContainer">
+
+                <!-- Accounts Render Here -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="this.js"></script>
+
 </body>
 </html>
