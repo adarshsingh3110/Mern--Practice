@@ -138,14 +138,170 @@
 // emaa.withdraw(100)
 // console.log(emaa)
 
-class Person {
-constructor(name, age) {
-this.name = name;
-this.age = age;
+// class Person {
+// constructor(name, age) {
+// this.name = name;
+// this.age = age;
+// }
+// greet(){
+// console.log("Hi, main " + this.name + " mai " +this.age + " saal ka hu");
+// }
+// }
+// const p = new Person("Adarsh", 21);
+// p.greet();
+
+//inheritance
+// Inheritnce in JavaScript is a mechanism where one class can inherit properties and methods from another class. This allows for code reusability and the creation of hierarchical relationships between classes.
+
+// In JavaScript, inheritance is primarily achieved through prototypes. Every object in JavaScript has a prototype, which is another object that it inherits properties and methods from. When you create a new object, it can access the properties and methods of its prototype chain.
+
+// There are two main ways to implement inheritance in JavaScript: using constructor functions and using ES6 classes.
+
+// function BankAccount(customerName, balance){
+//     this.customerName = customerName
+//     this.accountNumber = Date.now()
+//     this.balance = balance
+// }
+// BankAccount.prototype.deposit = function(amount){
+//     this.balance += amount
+// }
+
+// BankAccount.prototype.withdraw = function(amount){
+//         this.balance -= amount
+// }
+// function CurrentAccount(customerName, balance=0){
+//     // this.customerName = customerName
+//     // this.accountNumber = Date.now()
+//     // this.balance = balance
+
+//     BankAccount.call(this, customerName, balance) // Call the parent constructor to initialize properties
+
+//     this.transactionLimit = 10000
+    
+//     // this.takeBusinessLoan = function(amount){
+//     //     console.log("Loan of: "+amount)
+//     }
+// CurrentAccount.prototype.takeBusinessLoan =  function(amount){
+//         console.log("Loan of: "+amount)
+//     }
+// const adarsh = new CurrentAccount("adarsh", 1000)
+// console.log(adarsh)
+
+// adarsh.takeBusinessLoan(100000)
+// const shyam = new CurrentAccount("shyam", 2000)
+// console.log(shyam)
+// shyam.takeBusinessLoan(500000)
+
+// function SavingsAccount(customerName, balance=0){
+//     // this.customerName = customerName
+//     // this.accountNumber = Date.now()
+//     // this.balance = balance
+
+//     BankAccount.call(this, customerName, balance) // Call the parent constructor to initialize properties
+    
+//     this.transactionLimit = 10000
+// }
+
+// const abc = new SavingsAccount("abc", 100)
+// console.log(abc)
+
+// Parent
+// function Car(name, model, year, color, type) {
+//     this.name = name;
+//     this.model = model;
+//     this.year = year;
+//     this.color = color;
+//     this.type = type;
+// }
+
+// Car.prototype.start = function () {
+//     console.log(this.name + " started");
+// };
+
+// Car.prototype.stop = function () {
+//     console.log(this.name + " stopped");
+// };
+
+
+// function RacingCar(name, model, year, color) {
+//     Car.call(this, name, model, year, color, "Racing Car");
+//     this.carSpeed = 300;
+// }
+
+// RacingCar.prototype = Object.create(Car.prototype);
+
+// RacingCar.prototype.nitrogas = function () {
+//     console.log("Nitro Gas Speed: " + this.carSpeed);
+// };
+
+// // Sedan
+// function Sedan(name, model, year, color) {
+//     Car.call(this, name, model, year, color, "Sedan");
+//     this.luxury = "Premium";
+// }
+
+// Sedan.prototype = Object.create(Car.prototype);
+
+// Sedan.prototype.comfort = function () {
+//     console.log("Luxury: " + this.luxury);
+// };
+
+// function SUV(name, model, year, color) {
+//     Car.call(this, name, model, year, color, "SUV");
+//     this.offRoad = "Yes";
+// }
+
+// SUV.prototype = Object.create(Car.prototype);
+
+// SUV.prototype.offroading = function () {
+//     console.log("Off Road: " + this.offRoad);
+// };
+
+
+// const race = new RacingCar("Ferrari", "F8", 2024, "Red");
+// const suv = new SUV("Fortuner", "Legender", 2023, "Black");
+// const sedan = new Sedan("Honda", "City", 2024, "White");
+
+// race.start();
+// race.nitrogas();
+// race.stop();
+
+
+// suv.start();
+// suv.offroading();
+// suv.stop();
+
+
+// sedan.start();
+// sedan.comfort();
+// sedan.stop();
+
+
+class BankAccount {
+    #balance;
+
+    constructor(customerName, balance) {
+        this.customerName = customerName;
+        this.#balance = balance;
+    }
+
+    // Getter
+    get balance() {
+        return this.#balance;
+    }
+
+    // Setter
+    set balance(amount) {
+        this.#balance = amount;
+    }
 }
-greet(){
-console.log("Hi, main " + this.name + " mai " +this.age + " saal ka hu");
-}
-}
-const p = new Person("Adarsh", 21);
-p.greet();
+
+const user = new BankAccount("Adarsh", 5000);
+
+console.log(user.balance); // Getter
+
+user.balance = 10000; // Setter
+
+console.log(user.balance);
+
+// console.log(user.#balance); ❌ Error (Private Property)
