@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+input:focus{
+    border-color: royalblue;
+}
+
+button{
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#save{
+    background: #28a745;
+}
+
+#show{
+    background: #007bff;
+}
+
+#delete{
+    background: #dc3545;
+}
+
+button:hover{
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+#result{
+    margin-top: 20px;
+    color: #333;
+}
+    </style>
+    <input type="text" id="name">
+    <button id="save">Save</button>
+    <button id="show">Show</button>
+    <button id="delete">Delete</button>
+
+    <h2 id="result"></h2>
+    <script>
+    const input = document.querySelector('#name');
+    const saveBtn = document.querySelector('#save');
+    const showBtn = document.querySelector('#show');
+    const deleteBtn = document.querySelector('#delete');
+    const result = document.querySelector('#result');
+
+        saveBtn.addEventListener('click', () => {
+        localStorage.setItem("username", input.value);
+        input.value = "";
+    });
+
+    showBtn.addEventListener('click', () => {
+    const name = localStorage.getItem("username");
+    if (name) {
+        result.textContent = name;
+    } else {
+        result.textContent = "No data found!";
+    }
+});
+
+deleteBtn.addEventListener('click', () => {
+    localStorage.removeItem("username");
+    result.textContent = "Data deleted!";
+});
+
+    </script>
+</body>
+</html>
