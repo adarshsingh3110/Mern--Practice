@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+
+        <div class="form">
+            <input type="text" id="name" placeholder="Product Name">
+            <input type="number" id="price" placeholder="Price">
+            <input type="number" id="quantity" placeholder="Quantity">
+
+            <select id="category">
+                <option value="">Select Category</option>
+                <option>Electronics</option>
+                <option>Clothing</option>
+                <option>Food</option>
+                <option>Books</option>
+            </select>
+
+            <button id="addBtn">Add Product</button>
+
+        </div>
+
+        <div class="search-filter">
+            <input type="text" id="search" placeholder="Search Product">
+            <select id="filter">
+                <option value="All">All Categories</option>
+                <option>Electronics</option>
+                <option>Clothing</option>
+                <option>Food</option>
+                <option>Books</option>
+            </select>
+
+        </div>
+
+        <div class="summary">
+
+            <h3>Total Products : <span id="totalProducts">0</span></h3>
+            <h3>Total Quantity : <span id="totalQuantity">0</span></h3>
+            <h3>Grand Total : ₹<span id="grandTotal">0</span></h3>
+            <button id="clearCart">Clear Cart</button>
+        </div>
+
+        <div id="productList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form input,
+.form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form button:hover {
+    background-color: blue;
+}
+
+.search-filter {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.search-filter input,
+.search-filter select {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.summary {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.summary h3 {
+    margin-bottom: 10px;
+}
+
+#clearCart {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#clearCart:hover {
+    background-color: darkred;
+}
+
+#productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 8px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.editBtn,
+.deleteBtn {
+    padding: 8px 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.editBtn {
+    background-color: darkgoldenrod;
+    margin-right: 10px;
+}
+
+.deleteBtn {
+    background-color: darkred;
+}
